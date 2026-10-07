@@ -485,7 +485,7 @@ button {
   width: calc(100% - 12px);
   height: calc(100% - 12px);
   object-fit: cover;
-  object-position: 50% 22%;
+  object-position: 50% 28%;
   border-radius: 50%;
   border: 6px solid var(--bg);
   background: #fff;

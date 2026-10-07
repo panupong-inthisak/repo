@@ -6,7 +6,7 @@ const base = import.meta.env.BASE_URL
 export const profile = {
   name: { th: 'ภาณุพงศ์ อินทิศักดิ์', en: 'Panupong Inthisak' },
   nameLatin: 'PANUPONG INTHISAK',
-  photo: `${base}my_photo.png`,
+  photo: `${base}my_photo2.png`,
   resume: `${base}Panupong_Resume.pdf`,
   email: 'panupong3305@hotmail.com',
   github: 'https://github.com/panupong-inthisak',
@@ -43,23 +43,19 @@ export const ui = {
 export const stats: { value: number; suffix: string; label: Text }[] = [
   { value: 240, suffix: '+', label: { th: 'เว็บไซต์ที่ดูแล', en: 'Live websites maintained' } },
   { value: 40, suffix: '', label: { th: 'จังหวัดทั่วประเทศ', en: 'Provinces nationwide' } },
-  { value: 3, suffix: '+', label: { th: 'ปีประสบการณ์', en: 'Years of experience' } },
+  { value: 2, suffix: '+', label: { th: 'ปีประสบการณ์', en: 'Years of experience' } },
 ]
 
 export const about = {
   title: { th: 'เกี่ยวกับผม', en: 'About me' },
   paragraphs: [
     {
-      th: 'นักพัฒนาเว็บไซต์ที่มีประสบการณ์ในการพัฒนา ติดตั้งระบบ (Deployment) ดูแลและสนับสนุนระบบ รวมถึงการย้ายระบบจากแพลตฟอร์มเดิมสู่แพลตฟอร์มใหม่ ดูแลเว็บไซต์ที่เปิดใช้งานจริงมากกว่า 240 แห่ง ใน 40 จังหวัด สำหรับโครงการภาครัฐ',
-      en: 'A web developer experienced in building, deploying, supporting and migrating systems to new platforms — maintaining 240+ live websites across 40 provinces for government projects.',
+      th: 'นักพัฒนาเว็บไซต์ Full-stack (PHP/CodeIgniter) ประสบการณ์กว่า 2 ปี ดูแลเว็บไซต์ภาครัฐที่ใช้งานจริงมากกว่า 240 แห่งใน 40 จังหวัด ครอบคลุมตั้งแต่ออกแบบ UX/UI ด้วย Figma, พัฒนา Frontend/Backend, เชื่อมต่อ API ไปจนถึง Deploy, Migration และ Support หลังเปิดใช้งาน',
+      en: 'Full-stack web developer (PHP/CodeIgniter) with 2+ years of experience, maintaining 240+ live government websites across 40 provinces — from UX/UI design in Figma, frontend/backend development and API integration through to deployment, migration and post-launch support.',
     },
     {
-      th: 'มีประสบการณ์ทั้ง Frontend และ Backend การเชื่อมต่อ API การทำเว็บให้รองรับทุกอุปกรณ์ และออกแบบส่วนติดต่อผู้ใช้ด้วย Figma ร่วมกับแนวคิด UX/UI',
-      en: 'I work across frontend and backend, integrate APIs, build responsive sites for every device, and design interfaces in Figma with UX/UI principles in mind.',
-    },
-    {
-      th: 'สนใจเรียนรู้และประยุกต์ใช้ภาษา Framework และเครื่องมือใหม่ ๆ อยู่เสมอ เพื่อส่งมอบซอฟต์แวร์ที่มีเสถียรภาพและพร้อมใช้งานจริง',
-      en: "I'm always learning new languages, frameworks and tools to ship software that is stable and production-ready.",
+      th: 'สนใจเรียนรู้และประยุกต์ใช้ภาษาโปรแกรม Framework และเครื่องมือใหม่ ๆ รวมถึง AI อย่างต่อเนื่อง เพื่อเพิ่มประสิทธิภาพการพัฒนา และส่งมอบระบบที่มีเสถียรภาพพร้อมใช้งานจริง',
+      en: 'I keep learning and applying new programming languages, frameworks and tools — including AI — to work more efficiently and deliver stable, production-ready systems.',
     },
   ] satisfies Text[],
 }
@@ -70,48 +66,36 @@ export const experience = {
     {
       company: 'AS SYSTEM CO., LTD.',
       role: { th: 'นักพัฒนาเว็บไซต์', en: 'Web Developer' },
-      start: { th: 'ก.พ. 2023', en: 'Feb 2023' },
+      start: { th: 'ก.พ. 2024', en: 'Feb 2024' },
       end: null as Text | null,
       points: [
         {
-          th: 'พัฒนาและดูแลเว็บไซต์มากกว่า 240 แห่ง ใน 40 จังหวัด สำหรับองค์การบริหารส่วนตำบล (อบต.) และเทศบาล',
-          en: 'Built and maintained 240+ websites across 40 provinces for Subdistrict Administrative Organizations and municipalities',
+          th: 'พัฒนาและดูแลเว็บไซต์ภาครัฐมากกว่า 240 แห่ง ใน 40 จังหวัด สำหรับองค์การบริหารส่วนตำบล (อบต.) และเทศบาล',
+          en: 'Built and maintained 240+ government websites across 40 provinces for Subdistrict Administrative Organizations and municipalities',
         },
         {
-          th: 'พัฒนา Frontend ให้รองรับ Desktop, Tablet และ Mobile ด้วย Responsive Design โดยคำนึงถึง UX/UI',
-          en: 'Developed responsive frontends for desktop, tablet and mobile with a focus on UX/UI',
+          th: 'พัฒนาเว็บไซต์ isanspabiz.com แพลตฟอร์มสปาและสุขภาพภาคอีสาน 20 จังหวัด ครอบคลุมทั้ง Frontend และ Backend รองรับ 3 ภาษา พร้อมระบบค้นหา รีวิว และระบบสมาชิก',
+          en: 'Developed isanspabiz.com, a spa & wellness platform covering 20 Isan provinces — frontend and backend, 3 languages, search, reviews and member accounts',
         },
         {
-          th: 'พัฒนาและปรับปรุงระบบ Backend และ Back Office สำหรับจัดการข้อมูลและฟังก์ชันต่าง ๆ ของเว็บไซต์',
-          en: 'Built and improved backend and back-office systems for managing site content and features',
+          th: 'พัฒนา Frontend แบบ Responsive รองรับ Desktop, Tablet และ Mobile โดยคำนึงถึง UX/UI รวมถึงพัฒนาระบบ Backend และ Back Office สำหรับจัดการข้อมูลเว็บไซต์',
+          en: 'Built responsive frontends for desktop, tablet and mobile with UX/UI in mind, plus backend and back-office systems for managing site data',
         },
         {
-          th: 'พัฒนาเว็บไซต์ isanspabiz ครอบคลุมทั้ง Frontend และ Backend รองรับการใช้งานทุกอุปกรณ์',
-          en: 'Developed isanspabiz end-to-end, frontend and backend, responsive on every device',
+          th: 'พัฒนาระบบเสริม เช่น e-Service, แจ้งเตือนผ่าน LINE OA และ Email โดยเชื่อมต่อบริการภายนอกผ่าน REST API',
+          en: 'Developed add-on systems such as e-Service and LINE OA / email notifications, integrating external services via REST APIs',
         },
         {
-          th: 'พัฒนาระบบเสริม เช่น e-Service, แจ้งเตือนผ่าน LINE OA, แจ้งเตือนผ่าน Email และเครื่องมือจัดการหลังบ้าน',
-          en: 'Built add-on systems: e-Service, LINE OA notifications, email notifications and admin tools',
-        },
-        {
-          th: 'เชื่อมต่อระบบกับบริการภายนอกผ่าน REST API',
-          en: 'Integrated external services through REST APIs',
-        },
-        {
-          th: 'ติดตั้งและ Deploy เว็บไซต์บน Hosting และบริหารจัดการผ่าน Plesk',
-          en: 'Deployed sites to hosting and managed them through Plesk',
-        },
-        {
-          th: 'จัดทำคู่มือการใช้งานระบบ และให้ Technical Support แก่ผู้ใช้งานหลังเปิดให้บริการ',
-          en: 'Wrote user manuals and provided technical support after launch',
-        },
-        {
-          th: 'สนับสนุนและแก้ไขปัญหาทางเทคนิคของเว็บไซต์ที่ใช้งานจริง ตรวจสอบระบบ และประสานงานกับผู้ใช้งาน',
-          en: 'Troubleshot production websites, monitored systems and coordinated with users',
+          th: 'ติดตั้งและ Deploy เว็บไซต์บน Hosting พร้อมบริหารจัดการเซิร์ฟเวอร์ผ่าน Plesk',
+          en: 'Deployed websites to hosting and managed servers through Plesk',
         },
         {
           th: 'ดำเนินการ Migration ระบบจากแพลตฟอร์มเดิมไปยังแพลตฟอร์มใหม่ พร้อมปรับปรุงให้เหมาะกับการใช้งานปัจจุบัน',
-          en: 'Migrated systems from legacy platforms to new ones, modernizing them along the way',
+          en: 'Migrated systems from legacy platforms to new ones, modernizing them for current use',
+        },
+        {
+          th: 'จัดทำคู่มือการใช้งาน ให้ Technical Support และแก้ไขปัญหาเว็บไซต์ที่ใช้งานจริง รวมถึงประสานงานกับผู้ใช้งานหลังเปิดให้บริการ',
+          en: 'Wrote user manuals, provided technical support and troubleshot live websites, coordinating with users after launch',
         },
       ] satisfies Text[],
     },

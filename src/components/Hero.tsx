@@ -58,7 +58,7 @@ export function Hero() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="avatar-ring" />
-          <img src={profile.photo} alt={profile.name.en} className="avatar" width={413} height={531} />
+          <img src={profile.photo} alt={profile.name.en} className="avatar" width={896} height={1195} />
           <motion.span
             className="avatar-badge"
             initial={{ opacity: 0, y: 10 }}
