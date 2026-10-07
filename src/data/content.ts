@@ -9,7 +9,7 @@ export const profile = {
   photo: `${base}my_photo.png`,
   resume: `${base}Panupong_Resume.pdf`,
   email: 'panupong3305@hotmail.com',
-  github: 'https://github.com/tlein3262',
+  github: 'https://github.com/panupong-inthisak',
   greeting: { th: 'สวัสดีครับ ผม', en: "Hi, I'm" },
   roles: {
     th: ['Web Developer', 'Full-stack PHP Developer', 'Deployment & Migration', 'UX/UI-minded Builder'],
