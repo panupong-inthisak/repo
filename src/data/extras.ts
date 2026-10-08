@@ -5,16 +5,16 @@ const t = (th: string, en: string = th): Text => ({ th, en })
 const base = import.meta.env.BASE_URL
 
 export const statement = {
-  lead: t('ผมสร้างเว็บไซต์ที่', 'I build websites that'),
+  lead: t('ผมตั้งใจทำเว็บไซต์ที่', 'I try to build websites that'),
   words: [
-    t('ใช้งานได้จริง', 'actually go live'),
-    t('รองรับทุกหน้าจอ', 'work on every screen'),
+    t('ใช้งานได้จริง', 'work in real use'),
+    t('รองรับทุกหน้าจอ', 'fit every screen'),
     t('ย้ายระบบได้ราบรื่น', 'migrate smoothly'),
-    t('ดูแลต่อได้ยาว ๆ', 'stay maintained for years'),
+    t('ดูแลต่อได้ในระยะยาว', 'are easy to maintain'),
   ],
   sub: t(
-    'กว่า 240 เว็บไซต์ภาครัฐใน 40 จังหวัด ผ่านมือผมตั้งแต่ออกแบบจนถึงหลังเปิดใช้งาน',
-    '240+ government websites across 40 provinces — handled from design through post-launch.',
+    'มีประสบการณ์ดูแลเว็บไซต์ภาครัฐกว่า 240 แห่งใน 40 จังหวัด ตั้งแต่พัฒนาจนถึงหลังเปิดใช้งาน',
+    'Experienced in looking after 240+ government websites across 40 provinces, from development to post-launch.',
   ),
 }
 
