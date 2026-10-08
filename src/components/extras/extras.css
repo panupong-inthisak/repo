@@ -380,3 +380,115 @@
 .stat-card .odo {
   align-self: center;
 }
+
+/* ---------- "Built with" footer gimmick ---------- */
+.built-with-anchor {
+  position: relative;
+  display: inline-block;
+}
+
+.built-with-trigger {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 600;
+  color: var(--text-h);
+  text-decoration: underline dotted;
+  text-underline-offset: 4px;
+  cursor: help;
+}
+
+.built-with-trigger:focus-visible {
+  outline: 2px solid var(--primary-2);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.built-with-pop {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 12px);
+  z-index: 20;
+  width: min(300px, 80vw);
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 44px -18px rgba(15, 23, 42, 0.4);
+  color: var(--text-h);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transform-origin: 90% 100%;
+}
+
+.built-with-pop::after {
+  content: '';
+  position: absolute;
+  right: 28px;
+  bottom: -7px;
+  width: 12px;
+  height: 12px;
+  background: var(--bg-elev);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transform: rotate(45deg);
+}
+
+.built-with-badge {
+  align-self: flex-start;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: color-mix(in srgb, #22c55e 16%, transparent);
+  color: #15803d;
+}
+
+:root[data-theme='dark'] .built-with-badge {
+  color: #4ade80;
+}
+
+@media (max-width: 640px) {
+  .built-with-pop {
+    right: auto;
+    left: 0;
+    transform-origin: 10% 100%;
+  }
+
+  .built-with-pop::after {
+    right: auto;
+    left: 28px;
+  }
+}
+
+/* On phones, anchor the popover to the whole footer so it never runs off-screen */
+@media (max-width: 640px) {
+  .footer {
+    position: relative;
+  }
+
+  .built-with-anchor {
+    position: static;
+  }
+
+  .built-with-pop {
+    left: 0;
+    right: 0;
+    width: auto;
+  }
+
+  .built-with-pop::after {
+    display: none;
+  }
+}
+
+.email-btn {
+  word-break: normal;
+  overflow-wrap: anywhere;
+  font-size: clamp(0.85rem, 4.2vw, 1.3rem);
+}

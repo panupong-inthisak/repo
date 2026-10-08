@@ -3,6 +3,7 @@ import { motion } from 'motion/react'
 import { contact, profile, ui } from '../data/content'
 import { Tx, useLanguage } from '../i18n/LanguageContext'
 import { Reveal } from './Reveal'
+import { BuiltWith } from './extras/BuiltWith'
 
 const YEAR = new Date().getFullYear()
 
@@ -56,7 +57,7 @@ export function Contact() {
       <footer className="footer">
         <span>© {YEAR} {profile.nameLatin}</span>
         <span>
-          <Tx text={ui.footer} />
+          <BuiltWith />
         </span>
       </footer>
     </section>

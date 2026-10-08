@@ -138,3 +138,13 @@ export const projectsRail = {
     },
   ],
 }
+
+export const builtWith = {
+  prefix: t('ออกแบบและพัฒนาด้วย', 'Designed & built with'),
+  tech: 'React + Motion',
+  note: t(
+    'ปัจจุบันกำลังพัฒนาทักษะ React และ AI-Assisted Development เว็บนี้คือผลงานจากการเรียนรู้นั้น',
+    "I'm currently leveling up in React and AI-assisted development — this site is the result.",
+  ),
+  badge: t('กำลังเรียนรู้', 'Learning'),
+}
