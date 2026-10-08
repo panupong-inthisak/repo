@@ -362,3 +362,21 @@
     padding-top: 70px;
   }
 }
+
+/* Gradient text can't clip through the rolling strips, so paint it per digit */
+.stat-value.odo {
+  background: none;
+  color: var(--primary-2);
+}
+
+.stat-value .odo-strip span,
+.stat-value .odo-suffix {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.stat-card .odo {
+  align-self: center;
+}

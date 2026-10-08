@@ -585,7 +585,7 @@ button {
 
 .scroll-hint {
   position: absolute;
-  bottom: 28px;
+  bottom: 64px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
