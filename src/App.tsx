@@ -9,7 +9,6 @@ import { Projects } from './components/Projects'
 import { Skills } from './components/Skills'
 import { Contact } from './components/Contact'
 import { Statement } from './components/extras/Statement'
-import { Process } from './components/extras/Process'
 import { FloatingCta } from './components/extras/FloatingCta'
 import './components/extras/extras.css'
 
@@ -23,7 +22,6 @@ function App() {
           <Stats />
           <Statement />
           <About />
-          <Process index="02" />
           <Experience />
           <Projects />
           <Skills />

@@ -11,7 +11,7 @@ export function Experience() {
 
   return (
     <section id="experience" className="section container">
-      <SectionTitle index="03">
+      <SectionTitle index="02">
         <Tx text={experience.title} />
       </SectionTitle>
 

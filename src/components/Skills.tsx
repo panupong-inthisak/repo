@@ -11,7 +11,7 @@ export function Skills() {
   return (
     <section id="skills" className="section">
       <div className="container">
-        <SectionTitle index="05">
+        <SectionTitle index="04">
           <Tx text={skills.title} />
         </SectionTitle>
       </div>
