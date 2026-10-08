@@ -108,7 +108,7 @@ export const projectsRail = {
       kind: 'shot' as const,
       image: `${base}isanspabiz.png`,
       title: t('isanspabiz.com'),
-      desc: t('แพลตฟอร์มสปาอีสาน 20 จังหวัด · 3 ภาษา · รีวิว · สมาชิก', 'Isan spa platform · 20 provinces · 3 languages · reviews · members'),
+      desc: t('แพลตฟอร์มสปาอีสาน 20 จังหวัด · หลายภาษา · รีวิว · สมาชิก', 'Isan spa platform · 20 provinces · multilingual · reviews · members'),
       tags: ['PHP', 'CodeIgniter', 'MySQL', 'Bootstrap 5'],
       url: 'https://isanspabiz.com/',
     },

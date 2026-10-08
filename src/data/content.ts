@@ -51,8 +51,8 @@ export const about = {
   title: { th: 'เกี่ยวกับผม', en: 'About me' },
   paragraphs: [
     {
-      th: 'นักพัฒนาเว็บไซต์ Full-stack (PHP/CodeIgniter) ประสบการณ์กว่า 2 ปี ดูแลเว็บไซต์ภาครัฐที่ใช้งานจริงมากกว่า 240 แห่งใน 40 จังหวัด ครอบคลุมตั้งแต่ออกแบบ UX/UI ด้วย Figma, พัฒนา Frontend/Backend, เชื่อมต่อ API ไปจนถึง Deploy, Migration และ Support หลังเปิดใช้งาน',
-      en: 'Full-stack web developer (PHP/CodeIgniter) with 2+ years of experience, maintaining 240+ live government websites across 40 provinces — from UX/UI design in Figma, frontend/backend development and API integration through to deployment, migration and post-launch support.',
+      th: 'นักพัฒนาเว็บไซต์ Full-stack (PHP/CodeIgniter) ประสบการณ์กว่า 2 ปี ดูแลเว็บไซต์ภาครัฐที่ใช้งานจริงมากกว่า 240 แห่งใน 40 จังหวัด ครอบคลุมตั้งแต่พัฒนา Frontend/Backend ที่คำนึงถึง UX/UI, เชื่อมต่อ API ไปจนถึง Deploy, Migration และ Support หลังเปิดใช้งาน',
+      en: 'Full-stack web developer (PHP/CodeIgniter) with 2+ years of experience, maintaining 240+ live government websites across 40 provinces — from UX/UI-minded frontend and backend development and API integration through to deployment, migration and post-launch support.',
     },
     {
       th: 'สนใจเรียนรู้และประยุกต์ใช้ภาษาโปรแกรม Framework และเครื่องมือใหม่ ๆ รวมถึง AI อย่างต่อเนื่อง เพื่อเพิ่มประสิทธิภาพการพัฒนา และส่งมอบระบบที่มีเสถียรภาพพร้อมใช้งานจริง',
@@ -75,16 +75,24 @@ export const experience = {
           en: 'Built and maintained 240+ government websites across 40 provinces for Subdistrict Administrative Organizations and municipalities',
         },
         {
-          th: 'พัฒนาเว็บไซต์ isanspabiz.com แพลตฟอร์มสปาและสุขภาพภาคอีสาน 20 จังหวัด ครอบคลุมทั้ง Frontend และ Backend รองรับ 3 ภาษา พร้อมระบบค้นหา รีวิว และระบบสมาชิก',
-          en: 'Developed isanspabiz.com, a spa & wellness platform covering 20 Isan provinces — frontend and backend, 3 languages, search, reviews and member accounts',
+          th: 'พัฒนาเว็บไซต์ isanspabiz.com แพลตฟอร์มสปาและสุขภาพภาคอีสาน 20 จังหวัด ครอบคลุมทั้ง Frontend และ Backend รองรับหลายภาษา (ระบบแปลอัตโนมัติ) พร้อมระบบค้นหา รีวิว และระบบสมาชิก',
+          en: 'Developed isanspabiz.com, a spa & wellness platform covering 20 Isan provinces — frontend and backend, multilingual (auto-translation), search, reviews and member accounts',
         },
         {
-          th: 'พัฒนา Frontend แบบ Responsive รองรับ Desktop, Tablet และ Mobile โดยคำนึงถึง UX/UI รวมถึงพัฒนาระบบ Backend และ Back Office สำหรับจัดการข้อมูลเว็บไซต์',
-          en: 'Built responsive frontends for desktop, tablet and mobile with UX/UI in mind, plus backend and back-office systems for managing site data',
+          th: 'ออกแบบและพัฒนา Frontend แบบ Responsive ด้วย HTML, CSS, JavaScript และ Bootstrap รองรับ Desktop, Tablet และ Mobile โดยคำนึงถึง UX/UI',
+          en: 'Designed and built responsive frontends with HTML, CSS, JavaScript and Bootstrap for desktop, tablet and mobile, with UX/UI in mind',
         },
         {
-          th: 'พัฒนาระบบเสริม เช่น e-Service, แจ้งเตือนผ่าน LINE OA และ Email โดยเชื่อมต่อบริการภายนอกผ่าน REST API',
-          en: 'Developed add-on systems such as e-Service and LINE OA / email notifications, integrating external services via REST APIs',
+          th: 'ปรับปรุงและขยายระบบ Backend และ Back Office ด้วย PHP (CodeIgniter) และ MySQL สำหรับจัดการข้อมูลและฟังก์ชันต่าง ๆ ของเว็บไซต์',
+          en: 'Improved and extended backend and back-office systems with PHP (CodeIgniter) and MySQL for managing site data and features',
+        },
+        {
+          th: 'สร้างระบบเสริม เช่น e-Service, ระบบแจ้งเตือนผ่าน LINE OA และ Email',
+          en: 'Built add-on systems such as e-Service and LINE OA / email notifications',
+        },
+        {
+          th: 'เชื่อมต่อระบบกับบริการภายนอกผ่าน REST API และ LINE Messaging API',
+          en: 'Integrated external services via REST APIs and the LINE Messaging API',
         },
         {
           th: 'ติดตั้งและ Deploy เว็บไซต์บน Hosting พร้อมบริหารจัดการเซิร์ฟเวอร์ผ่าน Plesk',
@@ -95,8 +103,12 @@ export const experience = {
           en: 'Migrated systems from legacy platforms to new ones, modernizing them for current use',
         },
         {
-          th: 'จัดทำคู่มือการใช้งาน ให้ Technical Support และแก้ไขปัญหาเว็บไซต์ที่ใช้งานจริง รวมถึงประสานงานกับผู้ใช้งานหลังเปิดให้บริการ',
-          en: 'Wrote user manuals, provided technical support and troubleshot live websites, coordinating with users after launch',
+          th: 'จัดทำคู่มือการใช้งาน และจัดอบรมการใช้งานระบบให้เจ้าหน้าที่',
+          en: 'Wrote user manuals and ran system training for staff',
+        },
+        {
+          th: 'ให้การสนับสนุนทางเทคนิค (Technical Support) สำหรับเว็บไซต์ที่เปิดใช้งานจริง ครอบคลุมการตรวจสอบระบบ แก้ไขปัญหา และประสานงานกับผู้ใช้งาน',
+          en: 'Provided technical support for live websites — monitoring, troubleshooting and coordinating with users',
         },
       ] satisfies Text[],
     },
@@ -111,8 +123,8 @@ export const projects = {
     // Put a full-page screenshot at public/projects/isanspabiz.jpg and set this to enable hover-scroll preview
     screenshot: `${base}isanspabiz.png` as string | null,
     description: {
-      th: 'แพลตฟอร์มรวมข้อมูลสปาและสุขภาพในภาคอีสาน 20 จังหวัด มีระบบค้นหาและรีวิวสปา เครื่องมือวิเคราะห์อัตลักษณ์สปา แหล่งท่องเที่ยวเชิงสุขภาพ ระบบสมาชิก และรองรับ 3 ภาษา',
-      en: 'A spa & wellness platform covering 20 provinces of Northeastern Thailand — spa directory with reviews, a spa-identity analysis tool, health-tourism guides, member login and support for 3 languages.',
+      th: 'แพลตฟอร์มรวมข้อมูลสปาและสุขภาพในภาคอีสาน 20 จังหวัด มีระบบค้นหาและรีวิวสปา เครื่องมือวิเคราะห์อัตลักษณ์สปา แหล่งท่องเที่ยวเชิงสุขภาพ ระบบสมาชิก และรองรับหลายภาษา (ระบบแปลอัตโนมัติ)',
+      en: 'A spa & wellness platform covering 20 provinces of Northeastern Thailand — spa directory with reviews, a spa-identity analysis tool, health-tourism guides, member login and multilingual support (auto-translation).',
     },
     tags: ['PHP', 'CodeIgniter', 'MySQL', 'Bootstrap 5', 'Responsive', 'Multilingual'],
   },
@@ -171,7 +183,7 @@ export const skills = {
     },
     {
       name: { th: 'เครื่องมือ', en: 'Tools' },
-      items: ['Figma', 'LINE OA', 'AI-Assisted Development'],
+      items: ['Figma', 'Navicat', 'Microsoft Office', 'LINE OA', 'AI-Assisted Development'],
     },
   ],
 }
@@ -181,6 +193,7 @@ export const education = {
   degree: { th: 'ปริญญาตรี สาขาเทคโนโลยีสารสนเทศ', en: 'Bachelor of Information Technology' },
   school: { th: 'มหาวิทยาลัยมหาสารคาม', en: 'Mahasarakham University' },
   period: { th: 'ก.ค. 2019 – เม.ย. 2022', en: 'Jul 2019 – Apr 2022' },
+  project: { th: 'Senior Project: LINE Chatbot', en: 'Senior Project: LINE Chatbot' },
 }
 
 export const contact = {

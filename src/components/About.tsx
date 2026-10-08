@@ -31,6 +31,9 @@ export function About() {
           <p className="muted">
             <Tx text={education.school} />
           </p>
+          <p className="muted edu-project">
+            <Tx text={education.project} />
+          </p>
           <p className="edu-period">
             <Tx text={education.period} />
           </p>
