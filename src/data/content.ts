@@ -166,11 +166,11 @@ export const skills = {
     { name: { th: 'API & Integration', en: 'API & Integration' }, items: ['REST API', 'LINE Messaging API'] },
     {
       name: { th: 'Deployment & System', en: 'Deployment & System' },
-      items: ['Git / GitHub', 'Plesk Hosting', 'Deployment & Migration', 'Technical Support'],
+      items: ['Git / GitHub', 'Plesk Hosting', 'Website Deployment & Migration', 'Technical Support'],
     },
     {
       name: { th: 'เครื่องมือ', en: 'Tools' },
-      items: ['Figma', 'LINE OA', 'CCTV Installation', 'AI-Assisted Development'],
+      items: ['Figma', 'LINE OA', 'AI-Assisted Development'],
     },
   ],
 }
