@@ -1,32 +1,59 @@
-# React + TypeScript + Vite
+# Panupong Inthisak — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio of **Panupong Inthisak**, a full-stack web developer (PHP/CodeIgniter) maintaining **240+ live government websites across 40 provinces** in Thailand.
 
-Currently, two official plugins are available:
+🔗 **Live site:** https://panupong-inthisak.github.io/repo/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> เว็บพอร์ตโฟลิโอส่วนตัว รองรับภาษาไทย/อังกฤษ และโหมดมืด พัฒนาด้วย React + TypeScript
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Bilingual (TH / EN)** — switch instantly; the choice is remembered, and first-time visitors get their browser's language
+- **Light / dark mode** — follows the system setting, with a circular reveal when toggled
+- **Scroll animations** — typewriter hero, count-up stats, a timeline that draws as you scroll, 3D tilt cards and skill marquees
+- **Accessible motion** — animations turn off automatically when the visitor prefers reduced motion
+- **Responsive** — works from phones to wide screens
 
-## Expanding the Oxlint configuration
+## Tech stack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+| | |
+|---|---|
+| Framework | React 19 + TypeScript |
+| Build | Vite |
+| Animation | [Motion](https://motion.dev) |
+| Lint | Oxlint |
+| Hosting | GitHub Pages via GitHub Actions |
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Project structure
+
+```
+src/
+├── data/content.ts          # All text (TH/EN) — edit content here
+├── i18n/LanguageContext.tsx # Language state + <Tx> cross-fade text
+├── hooks/useTheme.ts        # Light/dark theme toggle
+├── components/              # Navbar, Hero, Stats, About, Experience,
+│                            # Projects, Skills, Contact, Reveal
+└── index.css                # Design tokens and styles
+public/
+├── my_photo2.png            # Profile photo
+└── Panupong_Resume.pdf      # Downloadable CV
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Run locally
+
+```bash
+npm install
+npm run dev      # start dev server
+npm run build    # type-check and build to dist/
+npm run lint     # run Oxlint
+```
+
+## Deployment
+
+Every push to `main` builds the site and publishes it to GitHub Pages through [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+The base path is set in [`vite.config.ts`](vite.config.ts) (`base: '/repo/'`) and must match the repository name.
+
+## Contact
+
+- Email: panupong3305@hotmail.com
+- GitHub: [@panupong-inthisak](https://github.com/panupong-inthisak)
