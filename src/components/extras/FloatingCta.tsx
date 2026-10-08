@@ -34,7 +34,7 @@ export function FloatingCta() {
           exit={{ y: 80, opacity: 0, x: '-50%' }}
           transition={{ type: 'spring', stiffness: 260, damping: 24 }}
         >
-          <img src={profile.photo} alt="" className="float-cta-avatar" width={900} height={1200} />
+          <img src={profile.photo} alt="" className="float-cta-avatar" width={896} height={1195} />
           <span className="float-cta-label">
             <Tx text={floatingCta.label} />
           </span>
