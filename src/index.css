@@ -308,7 +308,7 @@ button {
   color: #fff;
 }
 
-.lang-pill {
+.lang-switch .lang-pill {
   position: absolute;
   inset: 0;
   border-radius: 999px;
@@ -460,7 +460,7 @@ button {
 .avatar-wrap {
   position: relative;
   width: 260px;
-  aspect-ratio: 1;
+  height: 260px;
   display: grid;
   place-items: center;
 }
@@ -481,7 +481,9 @@ button {
 }
 
 .avatar {
-  position: relative;
+  position: absolute;
+  top: 6px;
+  left: 6px;
   width: calc(100% - 12px);
   height: calc(100% - 12px);
   object-fit: cover;
@@ -1233,6 +1235,7 @@ button {
 
   .avatar-wrap {
     width: 200px;
+    height: 200px;
   }
 
   .hero-tagline {
