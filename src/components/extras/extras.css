@@ -1,0 +1,364 @@
+/* Shared add-ons — styled only through the theme tokens so both designs can reuse them */
+
+/* ---------- Odometer ---------- */
+.odo {
+  display: inline-flex;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.odo-col {
+  display: inline-block;
+  height: 1em;
+  overflow: hidden;
+}
+
+.odo-strip {
+  display: flex;
+  flex-direction: column;
+}
+
+.odo-strip span {
+  display: block;
+  height: 1em;
+  line-height: 1;
+  text-align: center;
+}
+
+/* ---------- Rotating statement ---------- */
+.statement {
+  padding-block: 100px 10px;
+  text-align: center;
+}
+
+.statement-title {
+  font-size: clamp(1.9rem, 5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.statement-lead {
+  color: var(--text-h);
+}
+
+.statement-word-wrap {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  vertical-align: bottom;
+  padding: 0 0.3em 0.08em;
+  border-radius: 0.3em;
+  background: var(--chip-bg);
+}
+
+.statement-word {
+  display: inline-block;
+  white-space: nowrap;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.statement-sub {
+  margin: 18px auto 0;
+  max-width: 56ch;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+/* ---------- Process ---------- */
+.process-sub {
+  margin: -28px 0 36px;
+}
+
+.process {
+  position: relative;
+}
+
+.process-track {
+  position: absolute;
+  left: 12.5%;
+  right: 12.5%;
+  top: 17px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--border);
+}
+
+.process-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--gradient);
+  transform-origin: 0 50%;
+  transform: scaleX(var(--fill, 0));
+}
+
+.process-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+.process-node {
+  position: relative;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 0.9rem;
+  background: var(--bg-elev);
+  border: 3px solid var(--border);
+  color: var(--muted);
+  transition:
+    background 0.3s,
+    border-color 0.3s,
+    color 0.3s,
+    transform 0.3s;
+}
+
+.is-doing .process-node {
+  border-color: var(--primary-2);
+  color: var(--primary-2);
+  transform: scale(1.12);
+  box-shadow: 0 0 0 6px var(--glow);
+}
+
+.is-done .process-node {
+  background: var(--primary-2);
+  border-color: var(--primary-2);
+  color: #fff;
+}
+
+.process-card {
+  width: 100%;
+  padding: 20px;
+  border-radius: var(--radius);
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition:
+    border-color 0.3s,
+    transform 0.3s,
+    opacity 0.3s;
+}
+
+.is-todo .process-card {
+  opacity: 0.6;
+}
+
+.is-doing .process-card {
+  border-color: var(--primary-2);
+  transform: translateY(-6px);
+}
+
+.process-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.process-icon {
+  font-size: 1.5rem;
+}
+
+.process-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.pill-todo {
+  background: var(--chip-bg);
+  color: var(--muted);
+}
+
+.pill-doing {
+  background: color-mix(in srgb, #f59e0b 18%, transparent);
+  color: #b45309;
+}
+
+.pill-done {
+  background: color-mix(in srgb, #22c55e 18%, transparent);
+  color: #15803d;
+}
+
+:root[data-theme='dark'] .pill-doing {
+  color: #fbbf24;
+}
+
+:root[data-theme='dark'] .pill-done {
+  color: #4ade80;
+}
+
+.process-spin {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 0.8s linear infinite;
+}
+
+.process-card h3 {
+  font-size: 1.15rem;
+}
+
+.process-card p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.process-tasks {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px dashed var(--border);
+  display: grid;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+.process-tasks li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  transition: color 0.3s;
+}
+
+.process-tasks li.checked {
+  color: var(--text-h);
+}
+
+.process-check {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  border: 1.5px solid var(--border);
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #fff;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
+}
+
+.process-tasks li.checked .process-check {
+  background: #22c55e;
+  border-color: #22c55e;
+}
+
+/* ---------- Floating CTA ---------- */
+.float-cta {
+  position: fixed;
+  left: 50%;
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 7px 7px 8px;
+  border-radius: 999px;
+  background: var(--nav-bg);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px -16px rgba(15, 23, 42, 0.35);
+  white-space: nowrap;
+}
+
+.float-cta-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+.float-cta-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-h);
+  padding-right: 4px;
+}
+
+.float-cta-btn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: var(--gradient);
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+.float-cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+.float-cta-btn.ghost {
+  background: var(--chip-bg);
+  color: var(--chip-text);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .process-track {
+    left: 17px;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    height: auto;
+  }
+
+  .process-fill {
+    transform-origin: 50% 0;
+    transform: scaleY(var(--fill, 0));
+  }
+
+  .process-steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .process-step {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .float-cta-label {
+    display: none;
+  }
+
+  .statement {
+    padding-top: 70px;
+  }
+}
