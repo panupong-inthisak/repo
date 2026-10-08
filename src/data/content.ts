@@ -6,7 +6,7 @@ const base = import.meta.env.BASE_URL
 export const profile = {
   name: { th: 'ภาณุพงศ์ อินทิศักดิ์', en: 'Panupong Inthisak' },
   nameLatin: 'PANUPONG INTHISAK',
-  photo: `${base}my_photo2.png`,
+  photo: `${base}my_photo2.jpg`,
   resume: `${base}Panupong_Resume.pdf`,
   email: 'panupong3305@hotmail.com',
   github: 'https://github.com/panupong-inthisak',
