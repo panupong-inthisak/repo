@@ -27,6 +27,7 @@ export const ui = {
     experience: { th: 'ประสบการณ์', en: 'Experience' },
     projects: { th: 'ผลงาน', en: 'Projects' },
     skills: { th: 'ทักษะ', en: 'Skills' },
+    process: { th: 'วิธีทำงาน', en: 'Process' },
     contact: { th: 'ติดต่อ', en: 'Contact' },
   },
   downloadCv: { th: 'ดาวน์โหลด Resume', en: 'Download CV' },
@@ -108,7 +109,7 @@ export const projects = {
     name: 'isanspabiz',
     url: 'https://isanspabiz.com/',
     // Put a full-page screenshot at public/projects/isanspabiz.jpg and set this to enable hover-scroll preview
-    screenshot: null as string | null,
+    screenshot: `${base}isanspabiz.png` as string | null,
     description: {
       th: 'แพลตฟอร์มรวมข้อมูลสปาและสุขภาพในภาคอีสาน 20 จังหวัด มีระบบค้นหาและรีวิวสปา เครื่องมือวิเคราะห์อัตลักษณ์สปา แหล่งท่องเที่ยวเชิงสุขภาพ ระบบสมาชิก และรองรับ 3 ภาษา',
       en: 'A spa & wellness platform covering 20 provinces of Northeastern Thailand — spa directory with reviews, a spa-identity analysis tool, health-tourism guides, member login and support for 3 languages.',

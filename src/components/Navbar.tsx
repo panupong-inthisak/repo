@@ -4,7 +4,7 @@ import { ui } from '../data/content'
 import { Tx, useLanguage } from '../i18n/LanguageContext'
 import { useTheme } from '../hooks/useTheme'
 
-const links = ['about', 'experience', 'projects', 'skills', 'contact'] as const
+const links = ['about', 'process', 'experience', 'projects', 'skills', 'contact'] as const
 
 export function Navbar() {
   const { lang, setLang, t } = useLanguage()

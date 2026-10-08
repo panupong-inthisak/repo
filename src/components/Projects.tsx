@@ -87,7 +87,7 @@ export function Projects() {
 
   return (
     <section id="projects" className="section container">
-      <SectionTitle index="03">
+      <SectionTitle index="04">
         <Tx text={projects.title} />
       </SectionTitle>
 

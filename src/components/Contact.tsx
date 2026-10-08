@@ -24,7 +24,7 @@ export function Contact() {
     <section id="contact" className="section container">
       <Reveal className="contact-card">
         <div className="blob blob-contact" />
-        <span className="section-index">05</span>
+        <span className="section-index">06</span>
         <h2 className="contact-title">
           <Tx text={contact.title} />
         </h2>
